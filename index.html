@@ -1,0 +1,1175 @@
+<!DOCTYPE html><script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="https://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=b9f848c06fcba7eaf305d4a7cb7a1b98"></script><!DOCTYPE html>
+<html>
+
+<!--
+| ---
+| Theme by JAZZatkin
+| ---
+| http://jazzatkin.com
+| @JAZZatkin
+| ---
+-->
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+        <title>Minimal Desktop Theme</title>
+        <link rel="stylesheet" media="screen" href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=b84ed2eb31f8e1bbdb3e7a53afa67dd4"><link rel="shortcut icon" href="https://64.media.tumblr.com/f492b4aec16297570eab5ecd902d25ad/66aada05f54cb5d4-cd/s128x128u_c1/66ce662e0d8e98854a83201cc2de1c8b50385150.pnj">
+        <link rel="alternate" type="application/rss+xml" href="https://minimaldesktoptheme.tumblr.com/rss">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <meta name="description" content="It looks like a desktop, but minimal." />
+
+        <meta name="color:Primary" content="#f0d6db"/>
+        <meta name="color:Secondary" content="#fc2a20"/>
+        <meta name="color:Tertiary" content="#f0d6db"/>
+        <meta name="if:Infinite Scroll" content="1">
+        <meta name="if:Tags on Homepage" content="1" />
+        <meta name="text:Facebook Link" content="">
+        <meta name="text:Instagram Handle" content="">
+        <meta name="text:Twitter Handle" content="">
+        <meta name="text:YouTube URL" content="">
+        <meta name="if:Archive Link" content="1" />
+        <meta name="if:Ask Link" content="1" />
+        <meta name="text:Custom Link 1 Title" content="Custom Link 1">
+        <meta name="text:Custom Link 1 URL" content="">
+        <meta name="text:Custom Link 2 Title" content="Custom Link 2">
+        <meta name="text:Custom Link 2 URL" content="">
+        <meta name="text:Custom Link 3 Title" content="Custom Link 3">
+        <meta name="text:Custom Link 3 URL" content="">
+
+          <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+
+            <link href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display:900" rel="stylesheet">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+            <script>
+  $(document).ready(function() {
+    var a = 3;
+    $( ".draggable" ).draggable({
+   start: function(event, ui) { $(this).css("z-index", a++); }
+});
+    $('.container').mousedown(function() {
+        $(this).addClass('top').removeClass('bottom');
+        $(this).siblings().removeClass('top').addClass('bottom');
+        $(this).css("z-index", a++);
+
+    });
+});
+</script>
+
+        <style type="text/css">
+            html, body{
+                margin:0;
+                padding:0;
+                background-color: #f0d6db;
+                font-size: 12px;
+                line-height: 1.4em;
+                }
+            body{
+                text-shadow: rgba(0,0,0,.01) 0 0 1px;
+                font-family: 'Inconsolata', sans-serif;
+                }
+            /* Navigation */
+            nav#nav{
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+                background-color: #f0d6db;
+                border-top: 2px solid #fc2a20;
+                z-index: 200;
+
+                }
+            nav#nav ul{
+                list-style-type:none;
+                padding: 5px;
+                margin: 0;
+                height: 30px;
+                }
+            nav#nav ul li{
+                float: left;
+                padding: 0;
+                margin: 0;
+                height: 30px;
+                }
+            nav#nav ul li a{
+                font-size: 12px;
+                line-height: 24px;
+                height: 28px;
+                padding: 0px 20px;
+                border: 2px solid #fc2a20;
+                color: #fc2a20;
+                box-sizing: border-box;
+                display: inline-block;
+                margin-right: 5px;
+                text-transform: uppercase;
+                }
+            nav#nav ul li a:hover, nav#nav ul li a.selected{
+                background-color: #fc2a20;
+                color: #f0d6db;
+                }
+
+            /* Post Structure */
+            .wrapper{
+                width: 100%;
+                overflow: hidden;
+                margin: 40px 0px 80px 0px;
+                }
+            ul.posts{
+                list-style: none;
+                text-align: center;
+                padding: 0px !important;
+                margin: 0px auto;
+
+                width: 1090px;
+
+
+                }
+            @media screen and (max-width:1490px){
+                 ul.posts{
+                     width: 720px;
+                    }
+                }
+             @media screen and (max-width:920px){
+                 ul.posts{
+                    width: calc(100% - 200px);
+
+                    }
+                }
+             @media screen and (max-width:700px){
+                 ul.posts{
+                    width: calc(100% - 60px);
+                    position: static !important;
+                    height: auto !important;
+                    overflow: hidden;
+                    }
+                }
+            ul.posts li.post{
+                position: relative;
+                padding: 0;
+                text-align: left;
+                width: 350px;
+                margin: 5px;
+                float: left;
+                border: 2px solid #fc2a20;
+                box-sizing: border-box;
+                background-color: #FFF;
+                }
+            ul.posts li.post.about{
+                border-bottom: 0;
+                }
+            @media screen and (max-width:920px){
+                ul.posts li.post{
+                    position: static !important;
+                    width: 100% !important;
+                    margin: 0 0 5px 0;
+                    }
+                }
+            ul.posts li.post.full, ul.posts li.post.notes{
+                flex-grow: 1;
+                max-height: calc(100vh - 120px) !important;
+                z-index: 5000;
+                display: flex;
+                margin: 0 auto;
+                flex-direction: column;
+                align-self:flex-start;
+                }
+            @media screen and (max-width:920px){
+                ul.posts li.post.full, ul.posts li.post.notes{
+                    width: 100% !important;
+                    height: unset;
+                    overflow: hidden;
+                    margin: 5px 0px !important;
+                    flex-grow: 1 !important;
+                    max-height: unset !important;
+                }
+            }
+            .postControls{
+                width: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+                background-color: #f0d6db;
+                border-bottom: 2px solid #fc2a20;
+                display: flex;
+                min-height: 30px;
+                }
+            .postInner{
+                position: relative;
+                }
+
+            .date{
+                flex-grow: 1;
+                font-size: 12px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #fc2a20;
+                border: 0;
+                }
+            .date a{
+                color: #fc2a20;
+                text-decoration: none;
+                padding: 0;
+                border: 0;
+                }
+            .date a:hover{
+                background-color: #fc2a20;
+                color: #f0d6db;
+                }
+            .postControls .fullControl, .postControls .closeControl{
+                width: 20px;
+                height: 20px;
+                border: 2px solid #fc2a20;
+                line-height: 16px;
+                font-size: 12px;
+                text-align: center;
+                color: #fc2a20;
+                margin-left: 5px;
+                display: inline-block;
+                box-sizing: border-box;
+                }
+            .postControls .fullControl:hover, .postControls .closeControl:hover{
+                background-color: #fc2a20;
+                color: #f0d6db;
+                border: 2px solid #fc2a20;
+                }
+            /* Basics */
+            ::-webkit-scrollbar {
+                width: 10px;
+                position: fixed;
+                right: 12px;
+                }
+            ::-webkit-scrollbar-track {
+                box-shadow: 0;
+                border-radius: 0px;
+                background-color: #f0d6db;
+                }
+            .post ::-webkit-scrollbar-track {
+                border-left: 0px solid #fc2a20;
+                }
+            ::-webkit-scrollbar-thumb {
+                background: #fc2a20;
+                border-radius: 0px;
+                }
+            .hidden{
+                display: none;
+                }
+            figure img{
+                width: 100% !important;
+                height: auto !important;
+                margin-top: 5px;
+		        }
+
+		    a{
+                color: #fc2a20;
+                text-decoration: none;
+                }
+            a:hover{
+                color: #f0d6db;
+                }
+            p{
+                margin: 0;
+                padding: 0;
+            }
+            p+p{
+                padding-top: 5px;
+                }
+            figure + p{
+                padding-top: 5px;
+                }
+            p + figure{
+                padding-top: 5px !important;
+            }
+            img{
+                display: block;
+                margin: 0;
+                padding: 0;
+                }
+            blockquote{
+                   margin: 5px 0px 5px 20px;
+                }
+            .draggable{
+	            z-index: 2;
+                }
+            /* Posts, General */
+            .postContent{
+                width: 100%;
+                overflow: hidden;
+                box-sizing: border-box;
+                padding: 5px;
+                }
+            .postContent.hide{
+                padding: 0px;
+                }
+            .postContent.hide p{
+                display: block;
+                padding: 5px;
+                }
+            .postContent.hide p:last-child{
+                border-bottom: 2px solid #fc2a20;
+                }
+            .postContent.hide p span:empty{
+                padding: 0px;
+                border: 0;
+                }
+            .postContent a{
+                padding: 1px;
+                border-bottom: 1px solid #fc2a20;
+                }
+            .postContent a:hover{
+                background-color: #fc2a20;
+                color: #f0d6db;
+                }
+            .tagContainer, .meta{
+                width: 100%;
+                overflow: hidden;
+                padding: 5px;
+                box-sizing: border-box;
+                background-color: #f0d6db;
+                border-top: 2px solid #fc2a20;
+                font-size: 12px;
+                }
+            ul.tags{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                }
+            ul.tags li{
+                display: inline-block;
+                margin-right: 5px;
+                }
+            ul.tags li a, .perma a, .notecount a{
+                background-color: #fc2a20;
+                color: #f0d6db;
+                text-transform: uppercase;
+                }
+            ul.tags li a:hover, .perma a:hover, .notecount a:hover{
+                background-color: #f0d6db;
+                }
+            .desktopLinks{
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 1;
+                width: 60px;
+                overflow: hidden;
+                text-align: center;
+                }
+            @media screen and (max-width:700px){
+                .desktopLinks{
+                    position: static;
+                    width: 100%;
+                    padding: 0 40px 30px 40px;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    }
+                }
+            .desktopLink{
+                width: 100%;
+                overflow: hidden;
+                display: block;
+                padding: 0px 1px;
+                margin: 0 0 10px 0;
+                border: 0;
+                font-size: 30px;
+                line-height: 30px;
+                word-wrap: break-word;
+                }
+            @media screen and (max-width:700px){
+                .desktopLink{
+                    width: unset;
+                    display: inline-block;
+                    font-size: 25px;
+                    line-height: 25px;
+                    text-align: center;
+                    padding: 0px 1px;
+                    margin: 0 0 10px 10px;
+                    }
+                .desktopLink:first-child{
+                    margin: 0 0 10px 0;
+                    }
+                .desktopTitle{
+                    display: none;
+                    }
+                }
+            .desktopLink p.desktopTitle{
+                font-size: 12px;
+                line-height: 12px;
+                margin-top: 5px;
+                }
+            .desktopLink:hover{
+                color: #FFF;
+                padding: 0px 1px;
+                border: 0;
+                }
+            /* Text Posts */
+            h1, h2{
+                font-size: 12px;
+                padding: 0 0 5px 0;
+                margin: 0;
+            }
+            h3{
+                padding: 0;
+                margin: 0;
+                font-size: 12px;
+                width: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+                line-height: 22px;
+                background-color: #f0d6db;
+                color: #fc2a20;
+                border-bottom: 2px solid #fc2a20;
+                text-transform: uppercase;
+                font-weight: normal;
+                }
+            .text h3 a:hover{
+                background-color: #fc2a20;
+                color: #f0d6db;
+                }
+            /* Photo Post */
+            .photosetContainer{
+                width: 100%;
+                box-sizing: border-box;
+                }
+            .photoset img{
+                    width: 100% important;
+                    height: auto !important;
+                    display: block;
+                }
+            /* Video Posts */
+            .videoWrapper {
+                position: relative;
+                padding-bottom: 50%;
+                padding-top: 25px;
+                height: 0;
+                }
+            .videoWrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                }
+            /* Audio Posts */
+            .audio iframe{
+                width: 100% !important;
+                display: block;
+                }
+            /* Link Posts */
+            .linkThumb{
+                width: 100%;
+                height: auto;
+                border-bottom: 2px solid #fc2a20;
+                }
+            .linkHost, .linkTitle{
+                width: 100%;
+                border-bottom: 2px solid #fc2a20;
+                display: block;
+                background-color: #f0d6db;
+                padding: 5px;
+                box-sizing: border-box;
+                text-transform: uppercase;
+                }
+            .linkHost:hover, .linkTitle:hover{
+                background-color: #fc2a20;
+                color: #f0d6db;
+                border-bottom: 2px solid #fc2a20;
+                }
+            /* Answer Posts */
+            .questionContainer{
+                padding: 5px;
+                border-bottom: 2px solid #fc2a20;
+                }
+            .answerContainer{
+                padding: 5px;
+                }
+            .answererContainer + p{
+                display: inline;
+                }
+            .askerContainer, .answererContainer{
+                color: #fc2a20;
+                text-transform: uppercase;
+                }
+            .asker:hover, .answerer:hover{
+                background-color: #fc2a20;
+                color: #f0d6db;
+                }
+            .replies{
+                padding: 5px;
+                }
+            .answerContainer+.replies{
+                border-top: 2px solid #fc2a20;
+                }
+            .replies:empty{
+                display: none;
+                }
+            /* Chat Posts */
+            ul#chat{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                }
+            ul#chat li{
+                margin: 0;
+                padding: 5px;
+                border-top: 2px solid #fc2a20;
+                }
+            ul#chat li:first-child {
+                border-top: 0px solid #FFF;
+                }
+            ul#chat li span.label{
+                color: #fc2a20;
+                }
+            /* Pagination */
+            .pagination{
+                position: fixed;
+                bottom: 50px;
+                right: 20px;
+                z-index: 1;
+                width: 60px;
+                overflow: hidden;
+                text-align: center;
+                }
+             @media screen and (max-width:700px){
+                .pagination{
+                    position: static;
+                    padding: 0px 40px;
+                    margin: 40px 0 0 0;
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-align: right;
+                    display: flex;
+                    justify-content: center;
+                    }
+                .pagination .desktopLink{
+                    float: right;
+                }
+                 }
+            /* Notes */
+               ul.posts li.post.notes{
+                    width: 30%;
+                    flex-grow: 0;
+                    margin-left: 10px;
+                    }
+                ol.notes {
+                    list-style-type: none;
+                    font-weight: 300;
+                    padding: 5px;
+                }
+                ol.notes li.note {
+                    padding-top: 5px;
+                    font-size: 12px;
+                }
+                 ol.notes li.note:first-child {
+                     padding-top: 0px;
+                    }
+                ol.notes li.note a{
+                    color: #fc2a20;
+                    text-decoration: none;
+                    font-weight: normal;
+                    }
+                ol.notes li.note a:hover{
+                    background-color: #fc2a20;
+                    color: #f0d6db;
+                    }
+                ol.notes li.note img.avatar {
+                    display: none;
+                    }
+                ol.notes li.note span.action {
+                    font-weight: normal;
+                    }
+                ol.notes li.note .answer_content {
+                    font-weight: normal;
+                    }
+                ol.notes li.note blockquote a {
+                    text-decoration: none;
+                    }
+
+            .note.more_notes_link_container{
+                    margin-top: 0px;
+                    text-align: left !important;
+                    font-size: 12px !important;
+                    padding-bottom: 0px;
+                }
+                .note.more_notes_link_container a, a.more_notes_link, .notes_loading{
+                    text-decoration: none;
+                    padding: 1px !important;
+                    margin: 0;
+                    border: 0 !important;
+                    background-color: #fc2a20; !important;
+                    color: #f0d6db !important;
+                    font-weight: normal !important;
+                    font-family: 'Inconsolata', sans-serif;
+                    text-align: left !important;
+                    font-size: 12px; !important;
+                    text-transform: uppercase;
+                }
+                 a.more_notes_link:hover{
+                        color: #fc2a20 !important;
+                        background-color: #f0d6db !important;
+                        border-bottom:0;
+                    }
+            .clearfix:after {
+                     visibility: hidden;
+                     display: block;
+                     font-size: 0;
+                     content: " ";
+                     clear: both;
+                     height: 0;
+                     }
+                .clearfix { display: inline-block; }
+                /* start commented backslash hack \*/
+                * html .clearfix { height: 1%; }
+                .clearfix { display: block; }
+                /* close commented backslash hack */
+
+
+              #loading{
+                  width: 100vw;
+                  height: 100vh;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  position: fixed;
+                  z-index: 5000;
+                  background-color: #f0d6db;
+                  color: #fc2a20;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                  flex-wrap: wrap;
+                  font-size: 30px;
+
+                    }
+                #loading p{
+                    font-size: 14px;
+                    text-align: center;
+                    display: block;
+                    clear: left;
+                    margin-top: 10px;
+                }
+            .loaderTwo{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                color: #f0d6db;
+                background-color: #fc2a20;
+                display: none;
+                }
+            figure video {
+                max-width: 100% !important;
+            }
+        </style>
+    <link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=minimaldesktoptheme%26postID=178290466408" /><link rel="alternate" href="ios-app://305343404/tumblr/x-callback-url/blog?blogName=minimaldesktoptheme&postID=178290466408" /><link rel="alternate" type="application/json+oembed" href="https://www.tumblr.com/oembed/1.0?url=https://minimaldesktoptheme.tumblr.com/post/178290466408/lorem-ipsum-chat-post" title="Lorem Ipsum Chat Post
+Nulla vel: massa hendrerit, congue diam nec, aliquam lacus. Praesent finibus ornare tristique.
+Morbi eget: scelerisque felis. Proin faucibus mollis commodo. Mauris molestie, risus eu condimentum auctor, urna libero maximus..."/><script src="https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script><link rel="stylesheet" type="text/css" href="https://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3"><!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:title" content="Minimal Desktop Theme" /><meta property="og:url" content="https://minimaldesktoptheme.tumblr.com/?og=1" /><meta property="og:description" content="It looks like a desktop, but minimal." /><meta property="og:type" content="tumblr-feed:tumblelog" /><meta property="og:image" content="https://64.media.tumblr.com/f492b4aec16297570eab5ecd902d25ad/66aada05f54cb5d4-cd/s128x128u_c1/66ce662e0d8e98854a83201cc2de1c8b50385150.pnj" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=minimaldesktoptheme" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=minimaldesktoptheme" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:site" content="tumblr" /><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="minimaldesktoptheme" /><meta name="twitter:title" content="minimaldesktoptheme" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=minimaldesktoptheme&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=minimaldesktoptheme&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=minimaldesktoptheme&amp;referrer=twitter-cards" /><!-- GOOGLE CAROUSEL --><script type="application/ld+json">
+	{"@type":"ItemList","url":"https:\/\/minimaldesktoptheme.tumblr.com","itemListElement":[{"@type":"ListItem","position":1,"url":"https:\/\/minimaldesktoptheme.tumblr.com\/post\/178323289878"},{"@type":"ListItem","position":2,"url":"https:\/\/minimaldesktoptheme.tumblr.com\/post\/178316921763"},{"@type":"ListItem","position":3,"url":"https:\/\/minimaldesktoptheme.tumblr.com\/post\/178316076248"},{"@type":"ListItem","position":4,"url":"https:\/\/minimaldesktoptheme.tumblr.com\/post\/178324646003"},{"@type":"ListItem","position":5,"url":"https:\/\/minimaldesktoptheme.tumblr.com\/post\/178290466408\/lorem-ipsum-chat-post"}],"@context":"http:\/\/schema.org"}</script><link rel="canonical" href="https://minimaldesktoptheme.tumblr.com" /></head>
+    <body>
+     <div class="wrapper">
+        <div id="loading">
+       <i class="fas fa-cog fa-spin"></i>
+       <p>LOADING</p>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a class="navLink" href="https://minimaldesktoptheme.tumblr.com/">START</a></li>
+                <li><a class="navLink ask" href="/ask">Ask</a></li>
+                <li><a class="navLink archive" href="/archive">Archive</a></li>
+
+
+
+
+            </ul>
+        </nav>
+
+        <div class="desktopLinks">
+            <a class="desktopLink" href="https://minimaldesktoptheme.tumblr.com/"><i class="fas fa-desktop"></i><p class="desktopTitle">Minimal Desktop Theme</p>
+            </a>
+            <a class="desktopLink" href="https://www.tumblr.com/theme/40954" target="_blank"><i class="fas fa-palette"></i>
+                <p class="desktopTitle">Theme by JAZZatkin</p>
+            </a>
+
+
+
+
+
+
+
+                  <a class="desktopLink" href="/dddd" target="_blank"><i class="far fa-folder"></i>
+                <p class="desktopTitle">TEST</p>
+            </a>
+
+
+
+        </div>
+
+        <ul class="posts container">
+
+                <li class="post about">
+                    <div class="postControls">
+                        <div class="date">
+                           <a href="https://minimaldesktoptheme.tumblr.com/">Minimal Desktop Theme</a>
+                        </div>
+                        <a  class="fullControl" href="#"><i class="fas fa-arrows-alt"></i></a>
+                        <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+                    </div>
+                    <div class="postContent hide">
+
+
+                    <p>It looks like a desktop, but minimal.</p>
+                    </div>
+                </li>
+
+
+                <li class="post main draggable ">
+                    <div class="postControls">
+                        <div class="date">
+                        Fri Sep 21st
+                        </div>
+
+                        <a class="fullControl" href="https://minimaldesktoptheme.tumblr.com/post/178323289878"><i class="fas fa-arrows-alt"></i></a>
+
+                        <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+
+                    </div>
+
+                    <div class="postInner">
+                    <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
+                    <div class="postInnerTwo">
+
+
+
+
+
+
+
+                    <div class="photosetContainer">
+
+                          <a href="https://minimaldesktoptheme.tumblr.com/post/178323289878"><img src="https://64.media.tumblr.com/75a8e4ba8f8690b56180e2bbacfbcb8d/tumblr_pffb11HLnO1xh4ooyo1_500.jpg" alt="" width="100%"/></a>
+
+                          <a href="https://minimaldesktoptheme.tumblr.com/post/178323289878"><img src="https://64.media.tumblr.com/c8cccd02a8fbe40a54551b634b533951/tumblr_pffb11HLnO1xh4ooyo2_500.jpg" alt="" width="100%"/></a>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                </div>
+
+
+
+
+
+
+
+                    <div class="meta">
+                    <div class="notecount">
+                    <a href="https://minimaldesktoptheme.tumblr.com/post/178323289878">22 notes</a>                            </div>
+                     </div>
+
+
+
+
+
+
+            </li>
+
+
+
+
+                <li class="post main draggable ">
+                    <div class="postControls">
+                        <div class="date">
+                        Fri Sep 21st
+                        </div>
+
+                        <a class="fullControl" href="https://minimaldesktoptheme.tumblr.com/post/178316921763"><i class="fas fa-arrows-alt"></i></a>
+
+                        <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+
+                    </div>
+
+                    <div class="postInner">
+                    <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
+                    <div class="postInnerTwo">
+
+
+
+                    <div class="photo">
+                        <a href="https://minimaldesktoptheme.tumblr.com/post/178316921763"><img src="https://64.media.tumblr.com/3eb5895a3e1354fe97d2a88cd07b7781/tumblr_pfez6uNHei1xh4ooyo1_1280.jpg" alt="" width="100%"/> </a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                </div>
+
+
+
+
+
+
+
+                    <div class="meta">
+                    <div class="notecount">
+                    <a href="https://minimaldesktoptheme.tumblr.com/post/178316921763">22 notes</a>                            </div>
+                     </div>
+
+
+
+
+
+
+            </li>
+
+
+
+
+                <li class="post main draggable ">
+                    <div class="postControls">
+                        <div class="date">
+                        Fri Sep 21st
+                        </div>
+
+                        <a class="fullControl" href="https://minimaldesktoptheme.tumblr.com/post/178316076248"><i class="fas fa-arrows-alt"></i></a>
+
+                        <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+
+                    </div>
+
+                    <div class="postInner">
+                    <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
+                    <div class="postInnerTwo">
+
+
+
+                    <div class="photo">
+                        <a href="https://minimaldesktoptheme.tumblr.com/post/178316076248"><img src="https://64.media.tumblr.com/eb520ea40ff39151092b837e5aa650c0/tumblr_pfexm9bZnp1xh4ooyo1_1280.jpg" alt="" width="100%"/> </a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                </div>
+
+
+
+
+
+
+
+                    <div class="meta">
+                    <div class="notecount">
+                    <a href="https://minimaldesktoptheme.tumblr.com/post/178316076248">15 notes</a>                            </div>
+                     </div>
+
+
+
+
+
+
+            </li>
+
+
+
+
+                <li class="post main draggable ">
+                    <div class="postControls">
+                        <div class="date">
+                        Thu Sep 20th
+                        </div>
+
+                        <a class="fullControl" href="https://minimaldesktoptheme.tumblr.com/post/178324646003"><i class="fas fa-arrows-alt"></i></a>
+
+                        <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+
+                    </div>
+
+                    <div class="postInner">
+                    <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
+                    <div class="postInnerTwo">
+
+
+
+                    <div class="photo">
+                        <a href="https://minimaldesktoptheme.tumblr.com/post/178324646003"><img src="https://64.media.tumblr.com/4c703e71fe3c2788e3a11551cc764a9d/tumblr_p91b45L1sP1r0f2jao1_1280.jpg" alt="katiemccurdy:
+&ldquo;Aaron Phillips photographed by Katie McCurdy for Asos Magazine. Floral by Brrch Floral.
+&rdquo;" width="100%"/> </a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                </div>
+
+
+                        <div class="postContent">
+                        <p><a href="http://katiemccurdy.tumblr.com/post/174083434128/aaron-phillips-photographed-by-katie-mccurdy-for" class="tumblr_blog">katiemccurdy</a>:</p><blockquote><p>Aaron Phillips photographed by Katie McCurdy for Asos Magazine. Floral by Brrch Floral.&nbsp;</p></blockquote>
+                        </div>
+
+
+
+
+
+
+                    <div class="meta">
+                    <div class="notecount">
+                    <a href="https://minimaldesktoptheme.tumblr.com/post/178324646003">108 notes</a>                            </div>
+                     </div>
+
+
+
+
+
+
+            </li>
+
+
+
+
+                <li class="post main draggable ">
+                    <div class="postControls">
+                        <div class="date">
+                        Thu Sep 20th
+                        </div>
+
+                        <a class="fullControl" href="https://minimaldesktoptheme.tumblr.com/post/178290466408/lorem-ipsum-chat-post"><i class="fas fa-arrows-alt"></i></a>
+
+                        <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+
+                    </div>
+
+                    <div class="postInner">
+                    <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
+                    <div class="postInnerTwo">
+
+
+
+
+
+
+
+
+
+
+
+                <div class="chat">
+
+                        <h3>Lorem Ipsum Chat Post</h3>
+
+                    <ul id="chat">
+
+                            <li class="odd user_1">
+
+                                <span class="label">Nulla vel:</span>
+                                massa hendrerit, congue diam nec, aliquam lacus. Praesent finibus ornare tristique.
+                            </li>
+
+                            <li class="even user_2">
+
+                                <span class="label">Morbi eget:</span>
+                                scelerisque felis. Proin faucibus mollis commodo. Mauris molestie, risus eu condimentum auctor, urna libero maximus risus, non congue sem sapien quis arcu.
+                            </li>
+
+                            <li class="odd user_3">
+
+                                <span class="label">Nunc nec purus:</span>
+                                nec justo porta hendrerit a eget lorem. Etiam at ante metus. In hac habitasse platea dictumst.
+                            </li>
+
+                            <li class="even user_4">
+
+                                <span class="label"> Curabitur hendrerit:</span>
+                                commodo urna, sit amet vestibulum leo elementum eu. Maecenas posuere lectus ex.
+                            </li>
+
+                            <li class="odd user_5">
+
+                                <span class="label">Fusce:</span>
+                                in dui id lectus dictum lobortis. Nunc ullamcorper sed nibh quis dignissim.
+                            </li>
+
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                </div>
+
+
+
+
+
+
+
+                    <div class="meta">
+                    <div class="notecount">
+                    <a href="https://minimaldesktoptheme.tumblr.com/post/178290466408/lorem-ipsum-chat-post">2 notes</a>                            </div>
+                     </div>
+
+
+
+
+
+
+            </li>
+
+
+
+
+        </ul>
+
+
+        <div class="pagination infinite">
+
+
+
+            <a class="desktopLink" href="/page/2" id="next"><i class="fas fa-recycle"></i><p class="desktopTitle">Next Posts</p></a>
+
+
+        </div>
+
+
+</div>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/2.0b2.120519/jquery.infinitescroll.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
+
+        <script src="https://static.tumblr.com/6hsqxdt/QBym35odk/jquery.masonry.js"></script>
+
+
+
+        <script type="text/javascript">
+			(function() {
+			// Main content container
+			var $container = $('.container');
+			// Masonry + ImagesLoaded
+			$container.imagesLoaded(function(){
+				$container.masonry({
+					itemSelector: 'li.post',
+					});
+				});
+			$('#loading').delay(500).fadeOut(300);
+
+			// Infinite Scroll
+			$container.infinitescroll({
+				navSelector  : ".pagination.infinite",
+				nextSelector : "a#next",
+				itemSelector : ".post.main",
+				// finished message
+				loading: {
+		    		speed: 0,
+					msgText: 'LOADING',
+					finishedMsg: '',
+					}
+				},
+			// Trigger Masonry as a callback
+			function( newElements ) {
+				// hide new items while they are loading
+				var $newElems = $( newElements ).css({ opacity: '0' });
+				$newElems.find('.postInnerTwo').css({ opacity: '0'});
+				$newElems.find('.loaderTwo').css({ 'display': 'flex' });
+				// ensure that images load before adding to masonry layout
+				$newElems.imagesLoaded(function(){
+				    $newElems.each(function (i) {
+				        var $item = $(this);
+                        setTimeout(function() {
+                            $item.animate({ opacity: 1 }, 0);
+                            $item.find('.postInnerTwo').delay(500).animate({ opacity: 1 });
+                            $item.find('.loaderTwo').delay(500).fadeOut();
+                        }, 500*i);
+                    });
+
+					$container.masonry( 'appended', $newElems, true );
+					});
+				});
+			})();
+  		</script>
+</body>
+</html>
