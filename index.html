@@ -9,277 +9,243 @@
 | ---
 -->
 <html lang="en">
-    <head>
-        <title>Portfolio</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial scale=1.0,shrink-to-fit=no"/>
-        <link rel="stylesheet" href="assets/screen.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-        <script>
-          $(document).ready(function() {
-            var a = 3;
-            $( ".draggable" ).draggable({
-           start: function(event, ui) { $(this).css("z-index", a++); }
-        });
-            $('.container').mousedown(function() {
-                $(this).addClass('top').removeClass('bottom');
-                $(this).siblings().removeClass('top').addClass('bottom');
-                $(this).css("z-index", a++);
-
-            });
-        });
-      </script>
-    </head>
-    <body>
-     <div class="wrapper">
-       <div id="loading">
-       <i class="fas fa-cog fa-spin"></i>
-       <p>LOADING</p>
-     </div>
-        <nav id="nav">
-            <ul>
-                <li><a class="navLink" href="">START</a></li>
-                <li><a class="navLink ask" href="/">Ask</a></li>
-                <li><a class="navLink archive" href="/">Archive</a></li>
-            </ul>
-        </nav>
-        <section class="desktopLinks">
-            <a class="desktopLink" href=""><i class="fas fa-desktop"></i><p class="desktopTitle">Home</p>
-            </a>
-            <a class="desktopLink" href=""><i class="fas fa-palette"></i>
-                <p class="desktopTitle">Theme by JAZZatkin</p>
-            </a>
-            <a class="desktopLink" href=""><i class="far fa-folder"></i>
-                <p class="desktopTitle">TEST</p>
-            </a>
-        </section>
-        <ul class="posts container">
-          <li class="post about">
-              <div class="postControls">
-                  <div class="date">
-                     <a href="">Hello There!</a>
-                  </div>
-                  <a  class="fullControl" href="#"><i class="fas fa-arrows-alt"></i></a>
-                  <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
-              </div>
-              <div class="postContent hide">
-              <p>It looks like a desktop, but minimal.</p>
-              </div>
-          </li>
-          <li class="post main draggable ">
-              <div class="postControls">
-                  <div class="date">
-                  Fri Sep 21st
-                  </div>
-                  <a class="fullControl" href=""><i class="fas fa-arrows-alt"></i></a>
-                  <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
-              </div>
-              <div class="postInner">
-              <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
-              <div class="postInnerTwo">
-              <div class="photosetContainer">
-                    <a href=""><img src="https://64.media.tumblr.com/75a8e4ba8f8690b56180e2bbacfbcb8d/tumblr_pffb11HLnO1xh4ooyo1_500.jpg" alt="" width="100%"/></a>
-                    <a href=""><img src="https://64.media.tumblr.com/c8cccd02a8fbe40a54551b634b533951/tumblr_pffb11HLnO1xh4ooyo2_500.jpg" alt="" width="100%"/></a>
-              </div>
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial scale=1.0,shrink-to-fit=no"/>
+  <link rel="stylesheet" href="assets/screen.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var a = 3;
+      $( ".draggable" ).draggable({
+     start: function(event, ui) { $(this).css("z-index", a++); }
+  });
+      $('.container').mousedown(function() {
+          $(this).addClass('top').removeClass('bottom');
+          $(this).siblings().removeClass('top').addClass('bottom');
+          $(this).css("z-index", a++);
+      });
+  });
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="loading">
+      <i class="fas fa-cog fa-spin"></i>
+      <p>LOADING</p>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a class="navLink" href="">START</a></li>
+        <li><a class="navLink ask" href="/">CONTACT</a></li>
+        <li><a class="navLink archive" href="/">MY LINKS</a></li>
+      </ul>
+    </nav>
+    <section class="desktopLinks">
+      <a class="desktopLink" href=""><i class="fas fa-desktop"></i>
+        <p class="desktopTitle">Home</p>
+      </a>
+      <a class="desktopLink" href=""><i class="fas fa-palette"></i>
+        <p class="desktopTitle">My Art</p>
+      </a>
+      <a class="desktopLink" href=""><i class="far fa-folder"></i>
+        <p class="desktopTitle">Portfolio</p>
+      </a>
+    </section>
+    <ul class="posts container">
+      <li class="post about">
+        <div class="postControls">
+          <div class="date">
+            <a href="">Hello There!</a>
           </div>
-          </div>
-          <div class="meta">
-              <div class="notecount">
-              <a href="">22 notes</a>
-              </div>
-          </div>
-      </li>
-          <li class="post main draggable">
-              <div class="postControls">
-                  <div class="date">
-                  Fri Sep 21st
-                  </div>
-                  <a class="fullControl" href=""><i class="fas fa-arrows-alt"></i></a>
-                  <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
-              </div>
-
-              <div class="postInner">
-              <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
-              <div class="postInnerTwo">
-              <div class="photo">
-                  <a href=""><img src="https://64.media.tumblr.com/3eb5895a3e1354fe97d2a88cd07b7781/tumblr_pfez6uNHei1xh4ooyo1_1280.jpg" alt="" width="100%"/> </a>
-              </div>
-          </div>
-          </div>
-              <div class="meta">
-              <div class="notecount">
-              <a href="">22 notes</a>
-              </div>
-          </div>
+          <a class="fullControl" href="#"><i class="fas fa-arrows-alt"></i></a>
+          <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="postContent hide">
+          <p>It looks like a desktop, but minimal.</p>
+        </div>
       </li>
       <li class="post main draggable ">
-              <div class="postControls">
-                  <div class="date">
-                  Fri Sep 21st
-                  </div>
-                  <a class="fullControl" href=""><i class="fas fa-arrows-alt"></i></a>
-                  <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
-              </div>
-              <div class="postInner">
-              <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
-              <div class="postInnerTwo">
-              <div class="photo">
-                  <a href=""><img src="https://64.media.tumblr.com/eb520ea40ff39151092b837e5aa650c0/tumblr_pfexm9bZnp1xh4ooyo1_1280.jpg" alt="" width="100%"/> </a>
-              </div>
+        <div class="postControls">
+          <div class="date">
+            Fri Sep 21st
           </div>
+          <a class="fullControl" href=""><i class="fas fa-arrows-alt"></i></a>
+          <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
           </div>
-              <div class="meta">
-              <div class="notecount">
-              <a href="">15 notes</a>
-            </div>
-            </div>
-      </li>
-          <li class="post main draggable ">
-              <div class="postControls">
-                  <div class="date">
-                  Thu Sep 20th
-                  </div>
-                  <a class="fullControl" href=""><i class="fas fa-arrows-alt"></i></a>
-                  <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
-              </div>
-              <div class="postInner">
-              <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
-              <div class="postInnerTwo">
-              <div class="photo">
-                  <a href=""><img src="https://64.media.tumblr.com/4c703e71fe3c2788e3a11551cc764a9d/tumblr_p91b45L1sP1r0f2jao1_1280.jpg" alt="katiemccurdy:&ldquo;Aaron Phillips photographed by Katie McCurdy for Asos Magazine. Floral by Brrch Floral.&rdquo;" width="100%"/> </a>
+          <div class="postInner">
+            <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
+            <div class="postInnerTwo">
+              <div class="photosetContainer">
+                <a href=""><img src="https://64.media.tumblr.com/75a8e4ba8f8690b56180e2bbacfbcb8d/tumblr_pffb11HLnO1xh4ooyo1_500.jpg" alt="" width="100%"/></a>
+                <a href=""><img src="https://64.media.tumblr.com/c8cccd02a8fbe40a54551b634b533951/tumblr_pffb11HLnO1xh4ooyo2_500.jpg" alt="" width="100%"/></a>
               </div>
             </div>
           </div>
-
-                  <div class="postContent">
-                  <p><a href="" class="tumblr_blog">katiemccurdy</a>:</p><blockquote><p>Aaron Phillips photographed by Katie McCurdy for Asos Magazine. Floral by Brrch Floral.&nbsp;</p></blockquote>
-                  </div>
-
-              <div class="meta">
-              <div class="notecount">
-              <a href="">108 notes</a>
+          <div class="meta">
+          </div>
+        </li>
+        <li class="post main draggable ">
+          <div class="postControls">
+            <div class="date">
+              Fri Sep 21st
             </div>
-               </div>
-      </li>
-          <li class="post main draggable ">
-              <div class="postControls">
-                  <div class="date">
-                  Thu Sep 20th
-                  </div>
-
-                  <a class="fullControl" href=""><i class="fas fa-arrows-alt"></i></a>
-                  <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
-
-              </div>
-              <div class="postInner">
-              <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
-              <div class="postInnerTwo">
-          <div class="chat">
-
-              <h3>Lorem Ipsum Chat Post</h3>
-
-              <ul id="chat">
-
-                      <li class="odd user_1">
-
-                          <span class="label">Nulla vel:</span>
-                          massa hendrerit, congue diam nec, aliquam lacus. Praesent finibus ornare tristique.
-                      </li>
-
-                      <li class="even user_2">
-
-                          <span class="label">Morbi eget:</span>
-                          scelerisque felis. Proin faucibus mollis commodo. Mauris molestie, risus eu condimentum auctor, urna libero maximus risus, non congue sem sapien quis arcu.
-                      </li>
-
-                      <li class="odd user_3">
-
-                          <span class="label">Nunc nec purus:</span>
-                          nec justo porta hendrerit a eget lorem. Etiam at ante metus. In hac habitasse platea dictumst.
-                      </li>
-
-                      <li class="even user_4">
-
-                          <span class="label"> Curabitur hendrerit:</span>
-                          commodo urna, sit amet vestibulum leo elementum eu. Maecenas posuere lectus ex.
-                      </li>
-
-                      <li class="odd user_5">
-
-                          <span class="label">Fusce:</span>
-                          in dui id lectus dictum lobortis. Nunc ullamcorper sed nibh quis dignissim.
-                      </li>
-
-        </ul>
-                </div>
-
-                </div>
-                </div>
-                <div class="meta">
-                    <div class="notecount">
-                    <a href="">2 notes</a>
-                  </div>
-                  </div>
-            </li>
-        </ul>
-        <div class="pagination infinite">
-
-            <a class="desktopLink" href="/page/2" id="next"><i class="fas fa-recycle"></i><p class="desktopTitle">Next Posts</p></a>
+            <a class="fullControl" href=""><i class="fas fa-arrows-alt"></i></a>
+            <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+          </div>
+          <div class="postInner">
+          <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
+          <div class="postInnerTwo">
+          <div class="photo">
+            <a href=""><img src="https://64.media.tumblr.com/3eb5895a3e1354fe97d2a88cd07b7781/tumblr_pfez6uNHei1xh4ooyo1_1280.jpg" alt="" width="100%"/> </a>
+          </div>
         </div>
       </div>
+      <div class="meta">
+      </div>
+    </li>
+    <li class="post main draggable">
+      <div class="postControls">
+        <div class="date">
+          Fri Sep 21st
+        </div>
+        <a class="fullControl" href=""><i class="fas fa-arrows-alt"></i></a>
+        <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="postInner">
+        <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
+        <div class="postInnerTwo">
+          <div class="photo">
+            <a href=""><img src="https://64.media.tumblr.com/eb520ea40ff39151092b837e5aa650c0/tumblr_pfexm9bZnp1xh4ooyo1_1280.jpg" alt="" width="100%"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+      </div>
+    </li>
+    <li class="post main draggable">
+      <div class="postControls">
+        <div class="date">
+          Thu Sep 20th
+        </div>
+        <a class="fullControl" href=""><i class="fas fa-arrows-alt"></i></a>
+        <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="postInner">
+        <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
+        <div class="postInnerTwo">
+          <div class="photo">
+            <a href=""><img src="https://64.media.tumblr.com/4c703e71fe3c2788e3a11551cc764a9d/tumblr_p91b45L1sP1r0f2jao1_1280.jpg" alt="katiemccurdy:&ldquo;Aaron Phillips photographed by Katie McCurdy for Asos Magazine. Floral by Brrch Floral.&rdquo;" width="100%"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="postContent">
+        <p><a href="" class="tumblr_blog">katiemccurdy</a>:</p><blockquote><p>Aaron Phillips photographed by Katie McCurdy for Asos Magazine. Floral by Brrch Floral.&nbsp;</p></blockquote>
+      </div>
+      <div class="meta">
+      </div>
+    </li>
+    <li class="post main draggable ">
+      <div class="postControls">
+        <div class="date">
+          Thu Sep 20th
+        </div>
+        <a class="fullControl" href=""><i class="fas fa-arrows-alt"></i></a>
+        <a class="closeControl closeButton" href="#"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="postInner">
+        <div class="loaderTwo"><i class="fas fa-cog fa-spin"></i></div>
+        <div class="postInnerTwo">
+          <div class="chat">
+            <h3>Lorem Ipsum Chat Post</h3>
+            <ul id="chat">
+              <li class="odd user_1">
+                <span class="label">Nulla vel:</span>
+                massa hendrerit, congue diam nec, aliquam lacus. Praesent finibus ornare tristique.
+              </li>
+              <li class="even user_2">
+                  <span class="label">Morbi eget:</span>
+                  scelerisque felis. Proin faucibus mollis commodo. Mauris molestie, risus eu condimentum auctor, urna libero maximus risus, non congue sem sapien quis arcu.
+              </li>
 
-  		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/2.0b2.120519/jquery.infinitescroll.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
-      <script src="https://static.tumblr.com/6hsqxdt/QBym35odk/jquery.masonry.js"></script>
-      <script type="text/javascript">
-			(function() {
-			// Main content container
-			var $container = $('.container');
-			// Masonry + ImagesLoaded
-			$container.imagesLoaded(function(){
-				$container.masonry({
-					itemSelector: 'li.post',
-					});
-				});
-			$('#loading').delay(500).fadeOut(300);
+              <li class="odd user_3">
+                  <span class="label">Nunc nec purus:</span>
+                  nec justo porta hendrerit a eget lorem. Etiam at ante metus. In hac habitasse platea dictumst.
+              </li>
 
-			// Infinite Scroll
-			$container.infinitescroll({
-				navSelector  : ".pagination.infinite",
-				nextSelector : "a#next",
-				itemSelector : ".post.main",
-				// finished message
-				loading: {
-		    		speed: 0,
-					msgText: 'LOADING',
-					finishedMsg: '',
-					}
-				},
-			// Trigger Masonry as a callback
-			function(newElements) {
-				// hide new items while they are loading
-				var $newElems = $( newElements ).css({ opacity: '0' });
-				$newElems.find('.postInnerTwo').css({ opacity: '0'});
-				$newElems.find('.loaderTwo').css({ 'display': 'flex' });
-				// ensure that images load before adding to masonry layout
-				$newElems.imagesLoaded(function(){
-				    $newElems.each(function (i) {
-				        var $item = $(this);
-                        setTimeout(function() {
-                            $item.animate({ opacity: 1 }, 0);
-                            $item.find('.postInnerTwo').delay(500).animate({ opacity: 1 });
-                            $item.find('.loaderTwo').delay(500).fadeOut();
-                        }, 500*i);
-                    });
+              <li class="even user_4">
+                  <span class="label"> Curabitur hendrerit:</span>
+                  commodo urna, sit amet vestibulum leo elementum eu. Maecenas posuere lectus ex.
+              </li>
 
-					$container.masonry( 'appended', $newElems, true );
-					});
-				});
-			})();
-  		</script>
-    <script src="assets/script.js"></script>
+              <li class="odd user_5">
+                  <span class="label">Fusce:</span>
+                  in dui id lectus dictum lobortis. Nunc ullamcorper sed nibh quis dignissim.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+      </div>
+    </li>
+  </ul>
+  <div class="pagination infinite">
+    <a class="desktopLink" href="/page/2" id="next"><i class="fas fa-recycle"></i><p class="desktopTitle">Next Posts</p></a>
+  </div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/2.0b2.120519/jquery.infinitescroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
+<script src="https://static.tumblr.com/6hsqxdt/QBym35odk/jquery.masonry.js"></script>
+<script type="text/javascript">
+(function() {
+// Main content container
+var $container = $('.container');
+// Masonry + ImagesLoaded
+$container.imagesLoaded(function(){
+  $container.masonry({
+    itemSelector: 'li.post',
+    });
+  });
+$('#loading').delay(500).fadeOut(300);
+
+// Infinite Scroll
+$container.infinitescroll({
+  navSelector  : ".pagination.infinite",
+  nextSelector : "a#next",
+  itemSelector : ".post.main",
+  // finished message
+  loading: {
+      speed: 0,
+    msgText: 'LOADING',
+    finishedMsg: '',
+    }
+  },
+// Trigger Masonry as a callback
+function(newElements) {
+  // hide new items while they are loading
+  var $newElems = $( newElements ).css({ opacity: '0' });
+  $newElems.find('.postInnerTwo').css({ opacity: '0'});
+  $newElems.find('.loaderTwo').css({ 'display': 'flex' });
+  // ensure that images load before adding to masonry layout
+  $newElems.imagesLoaded(function(){
+      $newElems.each(function (i) {
+          var $item = $(this);
+                  setTimeout(function() {
+                      $item.animate({ opacity: 1 }, 0);
+                      $item.find('.postInnerTwo').delay(500).animate({ opacity: 1 });
+                      $item.find('.loaderTwo').delay(500).fadeOut();
+                  }, 500*i);
+              });
+
+    $container.masonry( 'appended', $newElems, true );
+    });
+  });
+})();
+</script>
+<script src="assets/script.js"></script>
 </body>
 </html>
