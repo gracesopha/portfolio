@@ -17,19 +17,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      var a = 3;
-      $( ".draggable" ).draggable({
-     start: function(event, ui) { $(this).css("z-index", a++); }
-  });
-      $('.container').mousedown(function() {
-          $(this).addClass('top').removeClass('bottom');
-          $(this).siblings().removeClass('top').addClass('bottom');
-          $(this).css("z-index", a++);
-      });
-  });
-  </script>
+  <script src="../assets/script.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -197,52 +185,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/2.0b2.120519/jquery.infinitescroll.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
 <script src="https://static.tumblr.com/6hsqxdt/QBym35odk/jquery.masonry.js"></script>
-<script type="text/javascript">
-(function() {
-// Main content container
-var $container = $('.container');
-// Masonry + ImagesLoaded
-$container.imagesLoaded(function(){
-  $container.masonry({
-    itemSelector: 'li.post',
-    });
-  });
-$('#loading').delay(500).fadeOut(300);
-
-// Infinite Scroll
-$container.infinitescroll({
-  navSelector  : ".pagination.infinite",
-  nextSelector : "a#next",
-  itemSelector : ".post.main",
-  // finished message
-  loading: {
-      speed: 0,
-    msgText: 'LOADING',
-    finishedMsg: '',
-    }
-  },
-// Trigger Masonry as a callback
-function(newElements) {
-  // hide new items while they are loading
-  var $newElems = $( newElements ).css({ opacity: '0' });
-  $newElems.find('.postInnerTwo').css({ opacity: '0'});
-  $newElems.find('.loaderTwo').css({ 'display': 'flex' });
-  // ensure that images load before adding to masonry layout
-  $newElems.imagesLoaded(function(){
-      $newElems.each(function (i) {
-          var $item = $(this);
-                  setTimeout(function() {
-                      $item.animate({ opacity: 1 }, 0);
-                      $item.find('.postInnerTwo').delay(500).animate({ opacity: 1 });
-                      $item.find('.loaderTwo').delay(500).fadeOut();
-                  }, 500*i);
-              });
-
-    $container.masonry( 'appended', $newElems, true );
-    });
-  });
-})();
-</script>
-<script src="assets/script.js"></script>
+<script src="../assets/script.js"></script>
 </body>
 </html>
